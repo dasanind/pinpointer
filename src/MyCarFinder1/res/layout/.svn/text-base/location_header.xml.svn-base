@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" 
+        android:textColor="#030303"
+        android:typeface="serif"
+        android:layout_marginTop="8dp"
+        />
+     <TextView
+        android:id="@+id/header2"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"      
+        android:layout_toRightOf="@+id/header1"
+        android:layout_alignTop="@id/header1"
+        android:text="Description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+        android:textColor="#030303"
+        android:typeface="serif"
+        
+        
+        android:layout_alignBottom="@+id/header1"/>
+    <!--  android:layout_centerHorizontal="true"     /> -->
+<!--      -->
+      <TextView
+        android:id="@+id/header3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="16sp"
+        android:textStyle="bold"
+         android:layout_alignParentRight="true"  
+         android:textColor="#030303"  
+         android:typeface="serif"   
+         
+         android:layout_alignTop="@+id/header1"
+         android:layout_alignBottom="@+id/header1"
+          />
+ <!--    <TextView
+        android:id="@+id/header3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Lat."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/header2"          
+          />
+    <TextView
+        android:id="@+id/header4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"      
+        android:layout_toRightOf="@+id/header3"
+        android:layout_alignTop="@id/header1"        
+        android:layout_alignParentRight="true"   	
+    	android:text="Long."
+    	android:textSize="18sp"
+        android:textStyle="bold"/> -->
+ 
+       
+</RelativeLayout>

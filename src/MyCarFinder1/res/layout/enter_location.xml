@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+              	 android:background="#9BC4E2"
+                 >
+
+   
+<EditText android:id="@+id/address_text" 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"          
+          android:layout_marginTop="20dp"
+		  android:layout_centerHorizontal="true"
+          android:layout_alignParentLeft="true"
+        ></EditText>
+
+<TextView android:id="@+id/address_label" 
+          android:text="Address" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"      
+          android:gravity="center_vertical|center_horizontal"
+          android:textSize="18sp"
+          android:textColor="#030303"
+          android:layout_below="@+id/address_text"   
+          android:layout_alignRight="@+id/address_text" 
+          android:layout_alignLeft="@+id/address_text" 
+        ></TextView>
+
+    
+    <EditText android:id="@+id/desc_text" 
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"          
+          android:layout_marginTop="20dp"
+          android:layout_alignParentLeft="true"
+		  android:layout_centerHorizontal="true"
+          android:layout_below="@+id/address_label"  
+        ></EditText>
+
+<TextView android:id="@+id/desc_label" 
+          android:text="Description" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"      
+          android:gravity="center_vertical|center_horizontal"
+          android:textSize="18sp"
+          android:textColor="#030303"
+          android:layout_below="@+id/desc_text"   
+          android:layout_alignRight="@+id/desc_text" 
+          android:layout_alignLeft="@+id/desc_text"  
+        ></TextView>
+
+    <EditText android:id="@+id/date_add" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:layout_toRightOf="@+id/desc_text"	
+			android:layout_alignTop="@+id/desc_text"
+			android:layout_alignBottom="@+id/desc_text"
+			 />
+			
+    <TextView android:id="@+id/date_chooser_add"
+		 	
+			android:text="Pick a Date" 
+			android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"      
+		    android:gravity="center_vertical|center_horizontal" 
+		    android:textSize="18sp"
+          	android:textColor="#030303"
+          	android:layout_below="@+id/date_add"   
+          	android:layout_alignRight="@+id/date_add" 
+          	android:layout_alignLeft="@+id/date_add" /> 
+          	
+<Button android:id="@+id/pickDate_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/date_add"
+        android:layout_alignTop="@+id/desc_text"
+		android:layout_alignBottom="@+id/desc_text"
+		 />
+   <Button android:id="@+id/save_address_button"
+		 android:text="Save Address"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:gravity="center_vertical|center_horizontal"
+		 android:layout_centerHorizontal="true"
+		 android:textStyle="bold" 
+		 android:layout_alignParentBottom="true"
+		 android:layout_alignParentLeft="true"  
+ 		/>
+    <Button android:id="@+id/main_menu_button_add"
+		 android:text="Cancel"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentBottom="true"
+		 android:layout_alignParentRight="true"		 
+		 android:layout_centerHorizontal="true"
+		 android:layout_alignTop="@+id/save_address_button"
+		 android:textStyle="bold"
+ 		/>
+
+
+</RelativeLayout>

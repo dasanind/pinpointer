@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+
+    >
+    
+	<TextView android:id="@+id/description" 
+	    	  android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:textStyle="bold"/>
+                
+
+    <ImageView android:id="@+id/icon"
+        	   android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="4px"
+               android:layout_marginTop="5dp"
+               android:maxHeight="100dp"
+               android:maxWidth="100dp"
+               android:adjustViewBounds="true"               
+               android:layout_toRightOf="@+id/description"
+               android:layout_alignBottom="@+id/description"
+               android:clickable="true">
+<!--                android:layout_toRightOf="@id/description" -->
+<!--         android:layout_alignTop="@id/description"  android:layout_marginRight="10px"android:layout_marginTop="4px"> -->
+	</ImageView>
+
+        <!-- Newly added -->
+        
+         <Button android:id="@+id/satellite_button"
+		 android:text="Satellite"
+ 		 android:layout_width="wrap_content"
+		 android:layout_height="30dp"	 
+		 android:textSize="12sp"
+		 android:textStyle="bold"
+		 android:layout_marginTop="2dp"
+		 android:layout_below="@+id/description" 
+		 android:layout_alignParentLeft="true"
+		 android:gravity="center_vertical|center_horizontal"
+ 		/>
+         
+         <!-- <Button android:id="@+id/street_button"
+		 android:text="Street"
+ 		 android:layout_width="wrap_content"
+		 android:layout_height="30dp"	 
+		 android:textSize="12sp"
+		 android:textStyle="bold"
+		 android:layout_marginTop="2dp"
+		 android:layout_below="@+id/description" 
+		 android:layout_toRightOf="@+id/satellite_button"
+		 android:layout_marginLeft="4dp"
+		 android:gravity="center_vertical|center_horizontal"
+ 		/> -->
+         <!-- Newly added -->
+ <Button android:id="@+id/refrsh_button"
+		 android:text="Refresh"
+ 		 android:layout_width="wrap_content"
+		 android:layout_height="30dp"	 
+		 android:textSize="12sp"
+		 android:textStyle="bold"
+		 android:layout_marginTop="2dp"
+		 android:layout_below="@+id/satellite_button" 
+		 android:layout_alignParentLeft="true"
+		 android:gravity="center_vertical|center_horizontal"
+ 		/>
+
+  <Button android:id="@+id/back_button"
+		 android:text="Back to List"
+ 		 android:layout_width="wrap_content"
+		 android:layout_height="30dp"	 
+		 android:textSize="12sp"
+		 android:textStyle="bold"
+		 android:layout_marginTop="2dp"
+		 android:layout_alignTop="@+id/refrsh_button"
+         android:layout_alignBottom="@+id/refrsh_button"
+		 android:layout_below="@+id/satellite_button" 
+		 android:layout_alignParentRight="true"
+		 android:gravity="center_vertical|center_horizontal"
+ 		/>
+        <com.google.android.maps.MapView
+                android:id="@+id/map_view" 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/refrsh_button" 
+    			android:apiKey="0CiBjM3pE8FKnrhs2Oxgjl71Jg8guBcf-borreQ" />  
+    			
+
+    </RelativeLayout>
+<!-- </LinearLayout> -->

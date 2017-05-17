@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyCarFinder!</string>
+    <string name="app_name">PinPointer</string>
+    <string name="save_location_button">Save Current Location</string>
+    <string name="enter_location_button">Enter Location Manually</string>
+    <string name="menu_delete">Delete Location</string>
+     <string name="menu_email">Email Location</string>
+    <string name="no_records">No Locations Yet</string>
+    <string name="back">Cancel</string>
+    <string name="buttonClick">Click</string>
+    <string name="take_pic_button">Take Picture</string>
+    <string name="label_description">Description</string>
+    <string name="date_chooser">Pick a Date</string>
+    <string name="date_chooser_add">Pick a Date</string>
+    <string name="save_button">Save</string>
+    <string name="main_menu_button">Cancel</string>
+    <string name="address_label">Address</string>
+    <string name="save_address_button">Save Address</string>
+    <string name="main_menu_button_add">Cancel</string>
+    <string name="date">Date</string>
+    <string name="pickDate">+</string>
+    <string name="date_add">Date</string>
+    <string name="pickDate_add">+</string>
+	<string name="back_button">Back to List</string>
+	<string name="refrsh_button">Refresh</string>
+	<string name="satellite_button">Satellite</string>
+	<string name="bck_button">Back to List</string>
+	<string name="refsh_button">Refresh</string>
+	<string name="map_button">Map</string>
+	<!-- <string name="street_button">Street</string> -->
+<!-- 	<string name="map_st_button">Map</string>
+	<string name="sat_st_button">Satellite</string>
+	<string name="refsh_st_button">Refresh</string>
+	<string name="back_st_button">Back to List</string> -->
+</resources>

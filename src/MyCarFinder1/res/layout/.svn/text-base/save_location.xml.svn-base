@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+              	 android:background="#9BC4E2"
+                 >
+
+<Button android:id="@+id/take_pic_button"
+		android:text="Take Picture"
+ 		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true"
+		android:textStyle="bold"
+ 		/>
+   
+<EditText android:id="@+id/description_text" 
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"          
+          android:layout_alignParentLeft="true"
+		  android:layout_centerHorizontal="true"
+          android:layout_below="@+id/take_pic_button" 
+          android:layout_marginTop="20dp" 
+        ></EditText>
+
+<TextView android:id="@+id/label_description" 
+          android:text="Description" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"      
+		  android:gravity="center_vertical|center_horizontal"         
+          android:textSize="18sp"
+          
+          android:layout_below="@+id/description_text"   
+          android:layout_alignRight="@+id/description_text" 
+          android:layout_alignLeft="@+id/description_text" 
+          android:textColor="#030303"
+        ></TextView>
+
+
+			
+<EditText android:id="@+id/date" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:layout_toRightOf="@+id/description_text"	
+			android:layout_alignTop="@+id/description_text"
+			android:layout_alignBottom="@+id/description_text"
+			 />
+			
+<TextView android:id="@+id/date_chooser"
+		 	
+			android:text="Pick a Date" 
+			android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"      
+		    android:gravity="center_vertical|center_horizontal" 
+		    android:textSize="18sp"
+          
+          	android:layout_below="@+id/date"   
+          	android:layout_alignRight="@+id/date" 
+          	android:layout_alignLeft="@+id/date" 
+          	android:textColor="#030303"/>  
+			
+<Button android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/date"
+        android:layout_alignTop="@+id/description_text"
+		android:layout_alignBottom="@+id/description_text"
+		
+		 />
+
+   <Button android:id="@+id/save_button"
+		 android:text="Save"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:gravity="center_vertical|center_horizontal"
+		 android:layout_centerHorizontal="true"
+		 android:layout_alignParentBottom="true"
+		 android:layout_alignParentLeft="true"  
+		 android:textStyle="bold"
+ 		/>
+    <Button android:id="@+id/main_menu_button"
+		 android:text="Cancel"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentBottom="true"		 
+		 android:layout_centerHorizontal="true"
+		 android:layout_alignParentRight="true"
+		 android:layout_alignTop="@+id/save_button"
+		 android:textStyle="bold"
+ 		/>
+
+
+</RelativeLayout>
+
+   

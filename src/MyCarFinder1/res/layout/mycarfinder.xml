@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+              	 android:background="#ADD8E6"
+                 >
+
+ <ScrollView     
+        android:layout_width="fill_parent" 
+        android:layout_height="190dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/Title" 
+        android:fillViewport="true" >  
+        
+<ListView android:id="@+id/android:list"
+          android:layout_width="wrap_content"       	  
+       	  android:divider="#ffffff"
+  		  android:dividerHeight="2dp"
+  		  android:layout_height="190dp"/>
+</ScrollView>
+<TextView android:id="@+id/android:empty"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/no_records"
+          android:textColor="#030303"
+          />  
+
+ <Button android:id="@+id/save_location_button"
+		 android:text="Save Current Location"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentBottom="true"
+		 android:layout_alignParentLeft="true"
+		 android:layout_centerHorizontal="true"
+		 android:textStyle="bold"
+ 		/>
+
+  <Button android:id="@+id/enter_location_button"
+		 android:text="Enter Location Manually"
+ 		 android:layout_width="150dp"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentBottom="true"
+		 android:layout_alignParentRight="true"
+		 android:layout_centerHorizontal="true"
+		 android:layout_alignTop="@+id/save_location_button" 
+		 android:textStyle="bold"
+ 		/>
+</RelativeLayout>
+
